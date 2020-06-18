@@ -110,7 +110,7 @@ height: 60px;
 
 			transition: opacity .1s linear;
 
-			background-color:#fce38a;;
+			background-color:#fce38a;
 			position: absolute;
 			top: 100%;
 			left: 0;
@@ -294,6 +294,13 @@ height: 60px;
 		background: url(../images/clients-bg.jpg) center no-repeat;
 		background-size: cover;
 		padding: 110px 0;
+	}
+
+	.section--map{
+		background: url(../images/map-bg.jpg) center no-repeat;
+		background-size: cover;
+		padding: 60px 0;
+		margin-bottom: 0;
 	}
 
 
@@ -878,12 +885,11 @@ height: 60px;
 		color: #333;
 		text-transform: uppercase;
 		font-size: 14px;
-
+		transition: color .1s linear;
 	}
 
 	.blog__title:hover{
-		text-decoration: underline;
-		font-weight: 700;
+		color: #95E1D3;
 	}
 
 	.blog__text{
@@ -940,4 +946,235 @@ height: 60px;
 		font-family: 'Roboto', sans-serif;
 		font-style: italic;
 		font-size: 15px;
+	}
+
+	.map {
+		color:#F38181;
+		font-size: 18px;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+
+	.map__text{
+		text-decoration: none;
+		color:#F38181;
+	}
+
+	.map__text:hover{
+		text-decoration: underline;
+	}
+
+
+
+	.map::after{
+		content: "";
+		display: block;
+		width: 60px;
+		height: 3px;
+		background: #F38181;
+		margin: 10px auto;
+	}
+
+	/* footer */
+	.footer{
+		padding-top: 65px;
+		background-color: #f8f8f8;
+	}
+
+	.footer__inner{
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 65px;
+		border-bottom: 1px solid #e5e5e5;
+	}
+
+	.footer__col--first{
+		width: 40%;
+	}
+	.footer__col--second{
+		width: 29%;
+	}
+
+	.footer__col--thirt{
+		width: 22%;
+	}
+
+	.footer__logo{
+		font-size: 46px;
+		color: #ccc;
+		font-weight: 700;
+		margin-bottom: 30px;
+	}
+
+	.footer__text{
+		font-family: 'Roboto', sans-serif;
+		font-size: 15px;
+		color: #999;
+		margin-bottom: 30px;
+	}
+
+	.footer__sotial{
+
+	}
+	.footer__sotial-header{
+		font-size: 14px;
+		color: #333;
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #e5e5e5;;
+	}
+	.footer__sotial-header b{
+		font-size: 18px;
+	}
+
+	.footer__sotial{
+		margin-bottom: 25px;
+	}
+	.footer__sotial-content{
+		font-family: 'Roboto', sans-serif;
+		font-size: 15px;
+		font-weight: 300;
+		font-style: italic;
+		color: #999;
+	}
+
+	.footer__sotial-content a{
+		text-decoration: none;
+		color: #95e1d3;
+		padding-left: 15px;
+		font-size: 18px;
+	}
+
+	.footer__sotial-content a:hover{
+		color: #80bfb2;
+	}
+
+	.footer__title{
+		font-size: 18px;
+		text-transform: uppercase;
+		color: #333;
+		margin: 20px 0;
+	}
+
+	.footer__instagram{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		line-height: 1;
+	}
+
+	.footer__in-img{
+		display: block;
+		width: 31%;
+		transition: transform .1s linear;
+		margin-top: 2px;
+	}
+
+	.footer__in-img:hover{
+		transform: scale(1.1);
+	}
+
+	.footer__copyright{
+
+		padding: 20px 0;
+		text-align: center;
+		font-size: 16px;
+	}
+	.footer__copyright span{
+		color: #f38181;
+	}
+/* Blogs */
+	.blogs__item{
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 10px;
+	}
+	.blogs__img{
+		display: block;
+		width: 120px;
+		height: 80px;
+	}
+
+	.blogs__content{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+
+		margin-left: 15px;
+	}
+	.blogs__text{
+		font-size: 12px;
+		text-decoration: none;
+		color: #333;
+		line-height: 1.5;
+		text-transform: uppercase;
+		margin-bottom: 5px;
+	}
+
+	.blogs__text:hover{
+		text-decoration: underline;
+	}
+
+	.blogs__date{
+		font-family: 'Roboto', sans-serif;
+		font-size: 13px;
+		font-weight: 300;
+		font-style: italic;
+		color: #999;
+	}
+
+
+	/* subscribe */
+	.subscribe{
+		width: 100%;
+		max-width: 380px;
+		display: flex;
+	}
+
+	.subscribe__input{
+		height: 40px;
+		padding: 12px;
+		background: #fff;
+		border: 1px solid #e7e7e7;
+		border-right: 0;
+		font-style: italic;
+		font-weight: 300;
+		font-family: 'Roboto', sans-serif;
+		color: #333;
+		box-sizing: border-box;
+		outline: 0;
+		box-sizing: border-box;
+	}
+
+	.subscribe__input:focus{
+		outline: 0;
+		border: 2px solid #95e1d3;
+		border-right: 0;
+	]
+	}
+	.subscribe__input::placeholder{
+		color: #ccc;
+	}
+
+	.subscribe__btn{
+		height: 40px;
+		font-family: 'Montserrat', sans-serif;
+		text-transform: uppercase;
+		font-size: 14px;
+		font-weight: 700;
+		color: #fff;
+		background: #95e1d3;
+		border: 0;
+		cursor: pointer;
+		padding: 12px 30px;
+		box-sizing: border-box;
+		transition: background .2s linear;
+	}
+
+	.subscribe__btn:hover{
+		background: #80bfb2;
+	}
+	.subscribe__btn:focus{
+		outline: 0;
 	}
